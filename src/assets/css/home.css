@@ -1,0 +1,245 @@
+@import url("./reset.css");
+@import url("./variaveis.css");
+
+/* Textos */
+.titulo {
+  font-size: var(--fs-titulo);
+  font-family: var(--ff-titulo);
+  font-weight: 900;
+}
+
+.subtitulo {
+  font-size: var(--fs-subtitulo);
+  font-family: var(--ff-subtitulo);
+  font-weight: 700;
+}
+
+.texto {
+  font-size: var(--fs-texto);
+  font-family: var(--ff-texto);
+}
+
+.link,
+.button {
+  font-size: var(--fs-link);
+  font-family: var(--ff-link);
+  font-weight: 500;
+}
+
+/* Botões */
+.button {
+  padding: 1rem 1.4rem;
+  color: #fff;
+  border-radius: 5px;
+  background: var(--cor-primaria);
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transition: 0.3s background;
+  &:hover {
+    background: var(--cor-secundaria);
+  }
+}
+
+/* Header */
+
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 0.7rem 1rem;
+  & nav {
+    width: 100%;
+    max-width: 498px;
+    height: 100vh;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: var(--cor-fundo2);
+    position: fixed;
+    top: 0;
+    left: -100%;
+    padding: 1rem;
+    transition: 0.3s all;
+
+    &.active {
+      left: 0;
+    }
+    & .header_menu {
+      display: flex;
+      width: 100%;
+      flex-flow: column nowrap;
+      list-style: none;
+      & .header_menu_item {
+        padding: 0.6rem 0;
+        & a {
+          text-decoration: none;
+          color: var(--cor-primaria);
+          transition: 0.3s color;
+          &:hover {
+            color: var(--cor-secundaria);
+          }
+        }
+      }
+    }
+  }
+  & .buttons {
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    gap: 0.4rem;
+    & .button {
+      width: 100%;
+    }
+  }
+  & .header_menu_mobile {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--cor-primaria);
+    &:hover {
+      color: var(--cor-secundaria);
+    }
+  }
+
+  & .header_menu_close {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0.8rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--cor-primaria);
+    &:hover {
+      color: var(--cor-secundaria);
+    }
+  }
+}
+
+.logotipo {
+  width: auto;
+  min-width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 0;
+  color: var(--cor-primaria);
+  & img {
+    width: 80px;
+    height: 80px;
+  }
+  & h2 {
+    font-size: clamp(1.3rem, 2vw, 2rem);
+    font-weight: 700;
+    font-family: var(--ff-titulo);
+    white-space: nowrap;
+  }
+}
+
+/* Main */
+
+.main_container {
+  width: 100%;
+  background-color: var(--cor-fundo2);
+  padding: 1rem;
+  & .main_content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+/* Footer */
+
+footer {
+  width: 100%;
+  background-color: var(--cor-primaria);
+  padding: 1rem;
+}
+
+.footer_container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  padding: 1rem 0;
+  & .footer_content {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    & .logotipo {
+      color: #fff;
+    }
+    & .footer_redes {
+      display: flex;
+      flex-flow: row nowrap;
+      gap: 1rem;
+      & a {
+        color: #fff;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+/* Com a estrutura MOBILE FIRST, o breakpoint é 1200px (desktop) */
+@media (min-width: 1200px) {
+  .header_container {
+    justify-content: center;
+    & nav {
+      position: relative;
+      left: 0;
+      max-width: 1200px;
+      height: auto;
+      box-shadow: none;
+      justify-content: space-between;
+      align-items: center;
+      flex-flow: row nowrap;
+      padding: 0;
+      gap: 1rem;
+      & .header_menu {
+        width: auto;
+        flex-flow: row nowrap;
+        gap: 1rem;
+        & .header_menu_item {
+          padding: 0;
+          & a {
+            text-decoration: none;
+            color: var(--cor-primaria);
+            transition: 0.3s color;
+            &:hover {
+              color: var(--cor-secundaria);
+            }
+          }
+        }
+      }
+    }
+    & .buttons {
+      margin-top: 0;
+      margin-left: 1rem;
+      width: auto;
+      & .button {
+        width: auto;
+      }
+    }
+    & .header_menu_mobile {
+      display: none;
+    }
+    & .header_menu_close {
+      display: none;
+    }
+  }
+  .logotipo {
+    &.out {
+      display: none;
+    }
+    &.in {
+      display: flex;
+    }
+  }
+}
