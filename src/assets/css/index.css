@@ -130,26 +130,62 @@
     height: 80px;
   }
   & h2 {
-    font-size: 1.5rem;
+    font-size: clamp(1.3rem, 2vw, 2rem);
     font-weight: 700;
     font-family: var(--ff-titulo);
     white-space: nowrap;
   }
 }
 
+footer {
+  width: 100%;
+  background-color: var(--cor-primaria);
+  padding: 1rem;
+}
+
+.footer_container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  padding: 1rem 0;
+  & .footer_content {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    & .logotipo {
+      color: #fff;
+    }
+    & .footer_redes {
+      display: flex;
+      flex-flow: row nowrap;
+      gap: 1rem;
+      & a {
+        color: #fff;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
 /* Com a estrutura MOBILE FIRST, o breakpoint é 1200px (desktop) */
 @media (min-width: 1200px) {
   .header_container {
+    justify-content: center;
     & nav {
       position: relative;
       left: 0;
       max-width: 1200px;
       height: auto;
       box-shadow: none;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
       flex-flow: row nowrap;
-      padding: 0.7rem 1rem;
+      padding: 0;
       gap: 1rem;
       & .header_menu {
         width: auto;
@@ -181,6 +217,14 @@
     }
     & .header_menu_close {
       display: none;
+    }
+  }
+  .logotipo {
+    &.out {
+      display: none;
+    }
+    &.in {
+      display: flex;
     }
   }
 }
