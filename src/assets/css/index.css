@@ -45,7 +45,7 @@
 
 .header_container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   position: relative;
   padding: 0.7rem 1rem;
@@ -146,7 +146,7 @@
       max-width: 1200px;
       height: auto;
       box-shadow: none;
-      justify-content: space-between;
+      justify-content: space-around;
       align-items: center;
       flex-flow: row nowrap;
       padding: 0.7rem 1rem;
