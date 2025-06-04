@@ -1,0 +1,30 @@
+@import url("./reset.css");
+@import url("./variaveis.css");
+
+.titulo {
+  font-size: var(--fs-titulo);
+  font-family: var(--ff-titulo);
+}
+
+.subtitulo {
+  font-size: var(--fs-subtitulo);
+  font-family: var(--ff-subtitulo);
+}
+
+.texto {
+  font-size: var(--fs-texto);
+  font-family: var(--ff-texto);
+}
+
+.link,
+.button {
+  font-size: var(--fs-link);
+  font-family: var(--ff-link);
+}
+
+.button {
+  padding: 1rem 0.5rem;
+  color: #fff;
+  border-radius: 5px;
+  background: var(--cor-primaria);
+}

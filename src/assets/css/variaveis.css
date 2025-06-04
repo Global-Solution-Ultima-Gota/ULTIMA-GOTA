@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --cor-primaria: #4180ab;
+  --cor-fundo: #e4ebf0;
+  --cor-fundo2: #ffffff;
+  --cor-secundaria: #bdd1de;
+  --cor-terciaria: #d6f0e9;
+  --cor-texto: #333333;
+  --fs-titulo: 32px;
+  --ff-titulo: "Poppins", Verdana, sans-serif;
+  --fs-subtitulo: 28px;
+  --ff-subtitulo: "Montserrat", Verdana, sans-serif;
+  --fs-texto: 14px;
+  --ff-texto: "Poppins", Verdana, sans-serif;
+  --fs-link: 16px;
+  --ff-link: "Montserrat", monospace, sans-serif;
+}
+
+.modo-color-1 {
+  --cor-fundo: #C4E1E6;
+}
+.modo-color-2 {
+  --cor-fundo: #213555;
+  --cor-fundo2: #3E5879;
+}
+
