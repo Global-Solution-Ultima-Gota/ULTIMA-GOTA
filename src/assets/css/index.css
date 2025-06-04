@@ -137,6 +137,21 @@
   }
 }
 
+/* Main */
+
+.main_container {
+  width: 100%;
+  background-color: var(--cor-fundo2);
+  padding: 1rem;
+  & .main_content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+/* Footer */
+
 footer {
   width: 100%;
   background-color: var(--cor-primaria);
