@@ -40,14 +40,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 120%;
 }
 
 .form-caixa {
   background-color: var(--cor-fundo2);
-  padding: 40px;
+  padding: 0px 60px 0px 50px;
   border-radius: 20px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
   max-width: 400px;
   width: 100%;
   text-align: center;
@@ -110,4 +110,9 @@ button:hover {
   height: 200px;
   background-color: #2f6b94;
   border-top-right-radius: 100%;
+}
+
+.register a {
+  color: var(--cor-primaria);
+  text-decoration: none;
 }

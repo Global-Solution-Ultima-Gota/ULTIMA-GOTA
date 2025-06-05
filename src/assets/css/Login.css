@@ -49,11 +49,11 @@ body {
   flex-direction: column;
   justify-content: center;
   padding: 40px;
-  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
 }
 
 .logo {
-  width: 60px;
+  width: 90px;
   margin-bottom: 10px;
 }
 
@@ -97,14 +97,13 @@ label {
   font-size: 14px;
 }
 
-.icon {
-  margin-right: 10px;
-  font-size: 16px;
-}
-
 .toggle-password {
   cursor: pointer;
   margin-left: 10px;
+  color: var(--cor-primaria);
+  font-size: 14px;
+  font-weight: 500;
+  user-select: none;
 }
 
 button {
