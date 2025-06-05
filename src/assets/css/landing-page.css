@@ -1,0 +1,9 @@
+.lp_secao {
+  padding: 3rem;
+}
+
+.lp_secao_titulo {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--cor-primaria);
+}
