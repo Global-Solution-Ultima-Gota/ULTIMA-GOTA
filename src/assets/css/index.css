@@ -143,6 +143,7 @@
 /* Main */
 
 .main_container {
+  position: relative;
   width: 100%;
   background-color: var(--cor-fundo2);
   & .main_content {
