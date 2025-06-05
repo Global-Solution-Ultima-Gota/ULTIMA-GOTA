@@ -17,28 +17,32 @@
     color: var(--cor-texto);
 }
 
-.acessados .filtro a {
+.acessados .filtro button {
     margin-left: 20px;
     color: var(--cor-texto);
     text-decoration: none;
+    background: none;
+    border: none;
+    font-family: var(--ff-texto);
+    font-size: var(--fs-texto);
     position: relative;
+    cursor: pointer;
     
 }
 
-.acessados .filtro a.ativo {
+.acessados .filtro button.ativo {
     color: var(--cor-primaria);
     font-weight: 600;
     border-bottom: 1px solid var(--cor-primaria);
 }
 
-.acessados .filtro a.ativo::after {
+.acessados .filtro button.ativo::after {
     position: absolute;
     width: 100%;
     height: 2px;
     background-color: var(--cor-primaria);
     left: 0;
     bottom: -5px;
-    border-bottom: 1px solid var(--cor-primaria);
 }
 
 .cards {
@@ -115,7 +119,7 @@
 }
 
 .card .botao:hover {
-    background-color: var(--cor-primaria);
+    background-color: rgb(50, 89, 134);
 }
 
 .recentes {
@@ -135,26 +139,160 @@
     color: var(--cor-texto);
 }
 
-.recentes .filtro a {
+.recentes .filtro button {
     margin-left: 20px;
     color: var(--cor-texto);
     text-decoration: none;
+    background: none;
+    border: none;
+    font-family: var(--ff-texto);
+    font-size: var(--fs-texto);
     position: relative;
+    cursor: pointer;
     
 }
 
-.recentes .filtro a.ativo {
+.recentes .filtro button.ativo {
     color: var(--cor-primaria);
     font-weight: 600;
     border-bottom: 1px solid var(--cor-primaria);
 }
 
-.recentes .filtro a.ativo::after {
+.recentes .filtro button.ativo::after {
     position: absolute;
     width: 100%;
     height: 2px;
     background-color: var(--cor-primaria);
     left: 0;
     bottom: -5px;
-    border-bottom: 1px solid var(--cor-primaria);
+}
+
+.topicos {
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.topicos h2 {
+    color: var(--cor-texto);
+    font-size: var(--fs-subtitulo);
+    font-family: var(--ff-subtitulo);
+    margin-bottom: 20px;
+    
+}
+
+.topicos .conteudo {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.botoes-topicos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+    
+}
+
+.botoes-topicos button {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 24px;
+    background-color: var(--cor-fundo);
+    border: 1px solid var(--cor-primaria);
+    border-radius: 16px;
+    transition: 0.3s;
+    color: var(--cor-texto);
+    font-size: var(--fs-texto);
+    font-family: var(--ff-texto);
+    cursor: pointer;
+    
+}
+
+.botoes-topicos button span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid black;
+    font-weight: bold;
+}
+
+
+.botoes-topicos button:hover {
+    background-color: var(--cor-primaria);
+    color: white;
+    border: 1px solid black
+}
+
+.botoes-topicos button:hover span {
+    background-color: white;
+    color: var(--cor-texto);
+}
+
+.card-topicos {
+    display: flex;
+    gap: 20px;
+    background-color: var(--cor-fundo);
+    border: 1px solid var(--cor-primaria);
+    border-radius: 16px;
+    padding: 20px;
+    max-width: 500px;
+    align-items: center;
+    min-height: 305px;
+}
+
+.card-topicos .titulo {
+    flex: 1;
+}
+
+.card-topicos h3 {
+    font-size: 18px;
+    margin-bottom: 6px;
+    color: var(--cor-texto);
+    font-family: var(--ff-texto);
+}
+
+.card-topicos .fonte {
+    color: var(--cor-primaria);
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.card-topicos .descricao {
+    color: var(--cor-texto);
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.card-topicos .botao {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: var(--cor-primaria);
+    color: white;
+    padding: 6px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    font-weight: 400;
+}
+
+.card-topicos .botao:hover {
+    background-color: rgb(50, 89, 134)
+}
+
+.card-topicos .imagem img {
+    width: 140px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
 }
