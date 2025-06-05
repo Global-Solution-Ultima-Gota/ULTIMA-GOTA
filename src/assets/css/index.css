@@ -254,6 +254,16 @@ footer {
   transition: transform 0.3s ease-in-out;
 }
 
+.button-up-page {
+  transition: 0.3s all;
+  position: fixed;
+  bottom: 1rem;
+  right: 2rem;
+  z-index: 1000;
+  cursor: pointer;
+  border: 1px solid var(--cor-secundaria);
+}
+
 /* Com a estrutura MOBILE FIRST, o breakpoint é 1200px (desktop) */
 @media (min-width: 1200px) {
   .header_container {
