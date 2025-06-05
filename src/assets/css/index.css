@@ -1,11 +1,11 @@
-@import url("./reset.css");
 @import url("./variaveis.css");
+@import url("./reset.css");
 
 /* Textos */
 .titulo {
   font-size: var(--fs-titulo);
   font-family: var(--ff-titulo);
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .subtitulo {
@@ -24,6 +24,8 @@
   font-size: var(--fs-link);
   font-family: var(--ff-link);
   font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
 }
 
 /* Botões */
@@ -36,6 +38,7 @@
   cursor: pointer;
   outline: none;
   transition: 0.3s background;
+  text-align: center;
   &:hover {
     background: var(--cor-secundaria);
   }
@@ -62,7 +65,7 @@
     left: -100%;
     padding: 1rem;
     transition: 0.3s all;
-
+    z-index: 1000;
     &.active {
       left: 0;
     }
@@ -142,12 +145,41 @@
 .main_container {
   width: 100%;
   background-color: var(--cor-fundo2);
-  padding: 1rem;
   & .main_content {
+    padding: 1rem;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
   }
+}
+
+.banner {
+  position: relative;
+  background: linear-gradient(to right, #45a1e0, #45a1e033);
+  border-radius: 20px;
+  padding: clamp(1.5rem, 8vw, 4rem);
+  display: flex;
+  flex-flow: column-reverse wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.slogan {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+  color: #fff;
+  & .slogan_titulo {
+    font-size: clamp(2rem, 5vw, 3rem);
+    letter-spacing: 0.03em;
+  }
+}
+.banner_img {
+  width: clamp(280px, 100vw, 420px);
+  margin-bottom: -12%;
 }
 
 /* Footer */
@@ -185,6 +217,41 @@ footer {
       }
     }
   }
+}
+/* Carousel */
+
+.carousel_container {
+  position: relative;
+  width: 100%;
+
+  & .button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 10;
+    &.left {
+      left: 0px;
+    }
+    &.right {
+      right: 0px;
+    }
+  }
+}
+
+.carousel {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-flow: row nowrap;
+  gap: 1rem;
+  overflow: hidden;
+  transition: 0.3s all;
+}
+.carousel_item {
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s ease-in-out;
 }
 
 /* Com a estrutura MOBILE FIRST, o breakpoint é 1200px (desktop) */
@@ -241,5 +308,11 @@ footer {
     &.in {
       display: flex;
     }
+  }
+}
+
+@media (min-width: 1024px) {
+  .banner {
+    flex-flow: row wrap;
   }
 }
