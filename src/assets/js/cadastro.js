@@ -56,11 +56,11 @@ function validarCPF(cpf) {
 
 function calcularIdade(data) {
   const hoje = new Date();
-  let idade = hoje.getFullYear() - data.getFullYear();
+  let Idade = hoje.getFullYear() - data.getFullYear();
   const mes = hoje.getMonth() - data.getMonth();
 
   if (mes < 0 || (mes === 0 && hoje.getDate() < data.getDate())) {
-    idade--;
+    Idade--;
   }
-  return idade;
+  return Idade;
 }
