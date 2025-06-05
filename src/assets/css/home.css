@@ -296,3 +296,15 @@
     object-fit: cover;
     border-radius: 12px;
 }
+
+.banner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 2rem auto 5rem auto;
+  max-height: 500px;
+}
+
+.banner .banner_img {
+    max-height: 550px;
+   
+}
