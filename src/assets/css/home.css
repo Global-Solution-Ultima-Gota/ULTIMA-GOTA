@@ -118,4 +118,43 @@
     background-color: var(--cor-primaria);
 }
 
+.recentes {
+    margin: 100px auto;
+    padding: 0 20px;
+}
 
+.recentes .topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.recentes h2 {
+    font-size: 28px;
+    color: var(--cor-texto);
+}
+
+.recentes .filtro a {
+    margin-left: 20px;
+    color: var(--cor-texto);
+    text-decoration: none;
+    position: relative;
+    
+}
+
+.recentes .filtro a.ativo {
+    color: var(--cor-primaria);
+    font-weight: 600;
+    border-bottom: 1px solid var(--cor-primaria);
+}
+
+.recentes .filtro a.ativo::after {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: var(--cor-primaria);
+    left: 0;
+    bottom: -5px;
+    border-bottom: 1px solid var(--cor-primaria);
+}

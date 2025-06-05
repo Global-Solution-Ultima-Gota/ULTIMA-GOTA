@@ -1,182 +1,271 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>A Ultima Gota</title>
     <link rel="stylesheet" href="src/assets/css/index.css" />
     <link rel="stylesheet" href="src/assets/css/home.css">
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
-    />
-  </head>
-  <body>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+</head>
+
+<body>
     <header class="header_container">
-      <div class="logotipo out">
-        <img src="/src/assets/imgs/logo.png" alt="logo" />
-        <h2>A Ultima Gota</h2>
-      </div>
-      <nav id="headerNav">
-        <div class="logotipo in">
-          <img src="/src/assets/imgs/logo.png" alt="logo" />
-          <h2>A Ultima Gota</h2>
+        <div class="logotipo out">
+            <img src="/src/assets/imgs/logo.png" alt="logo" />
+            <h2>A Ultima Gota</h2>
         </div>
-        <div class="header_menu_close" id="closeMenu">
-          <i class="bi bi-x-lg"></i>
+        <nav id="headerNav">
+            <div class="logotipo in">
+                <img src="/src/assets/imgs/logo.png" alt="logo" />
+                <h2>A Ultima Gota</h2>
+            </div>
+            <div class="header_menu_close" id="closeMenu">
+                <i class="bi bi-x-lg"></i>
+            </div>
+            <ul class="header_menu">
+                <li class="header_menu_item link"><a href="#">Problema</a></li>
+                <li class="header_menu_item link"><a href="#">Tecnologias</a></li>
+                <li class="header_menu_item link"><a href="#">Objetivos</a></li>
+                <li class="header_menu_item link"><a href="#">Público-alvo</a></li>
+                <li class="header_menu_item link"><a href="#">Benefícios</a></li>
+                <li class="header_menu_item link"><a href="#">Dia a dia</a></li>
+            </ul>
+            <div class="buttons">
+                <button class="button">Entrar</button>
+                <button class="button">Cadastrar</button>
+            </div>
+        </nav>
+        <div class="header_menu_mobile" id="toggleMenu">
+            <i class="bi bi-list"></i>
         </div>
-        <ul class="header_menu">
-          <li class="header_menu_item link"><a href="#">Problema</a></li>
-          <li class="header_menu_item link"><a href="#">Tecnologias</a></li>
-          <li class="header_menu_item link"><a href="#">Objetivos</a></li>
-          <li class="header_menu_item link"><a href="#">Público-alvo</a></li>
-          <li class="header_menu_item link"><a href="#">Benefícios</a></li>
-          <li class="header_menu_item link"><a href="#">Dia a dia</a></li>
-        </ul>
-        <div class="buttons">
-          <button class="button">Entrar</button>
-          <button class="button">Cadastrar</button>
-        </div>
-      </nav>
-      <div class="header_menu_mobile" id="toggleMenu">
-        <i class="bi bi-list"></i>
-      </div>
     </header>
+
     <main class="main_container">
-      <div class="main_content">
+        <div class="main_content">
 
-        <section class="acessados">
-    <div class="topo">
-        <h2 class="subtitulo">Mais Acessados</h2>
-        <div class=" texto filtro">
-            <a href="#">Canais</a>
-            <a href="#" class="ativo">Postagens</a>
+            <section class="acessados">
+                <div class="topo">
+                    <h2 class="subtitulo">Mais Acessados</h2>
+                    <div class=" texto filtro">
+                        <a href="#">Canais</a>
+                        <a href="#" class="ativo">Postagens</a>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class="card">
+                        <img src="./src/assets/imgs/post-saude-rs.webp" alt="Cuidados após enchentes">
+                        <div class="conteudo">
+                            <h3>Cuidados após enchentes</h3>
+                            <p class="fonte">Saúde RS</p>
+                            <p class="texto descricao">
+                                A cartilha apresenta informações sobre doenças transmitidas pelo contat...
+                            </p>
+                            <a href="#" class="texto botao">Saiba mais</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./src/assets/imgs/post-olhar-digital.png" alt="Post Olhar Digital">
+                        <div class="conteudo">
+                            <h3>Recorde de enchentes no...</h3>
+                            <p class="fonte">Olhar Digital</p>
+                            <p class="texto descricao">
+                                Levantamento do Serviço Geológico Brasil leva em conta dados sobre secas e enchen...
+                            </p>
+                            <a href="#" class="texto botao">Saiba mais</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./src/assets/imgs/post-abridor-de-latas.png" alt="Post Abridor de Latas">
+                        <div class="conteudo">
+                            <h3>No mundo, mais de 20 m...</h3>
+                            <p class="fonte">Abridor de Latas Comuni...</p>
+                            <p class="texto descricao">
+                                Os desastres naturais são tema recorrente no Brasil, problemas como seca e exce...
+                            </p>
+                            <a href="#" class="texto botao">Saiba mais</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./src/assets/imgs/download.jpg" alt="Post Universidade">
+                        <div class="conteudo">
+                            <h3>"Por que acontecem tant...</h3>
+                            <p class="fonte">Universidade Federal do Pa...</p>
+                            <p class="texto descricao">
+                                Confira perguntas da sociedade sobre prevenção, gestão de riscos, enchentes...
+                            </p>
+                            <a href="#" class="texto botao">Saiba mais</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./src/assets/imgs/card-enchente1.jpg" alt="Post Card1">
+                        <div class="conteudo">
+                            <h3>"Enchentes no Rio Gra...</h3>
+                            <p class="fonte">Jornal da USP</p>
+                            <p class="texto descricao">
+                                Atraso nos métodos de drenagem agrava problemas ambientais e urbanos do P...
+                            </p>
+                            <a href="#" class="texto botao">Saiba mais</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./src/assets/imgs/card-enchente2.jpg" alt="Post Card2">
+                        <div class="conteudo">
+                            <h3>"Notícias sobre enchen...</h3>
+                            <p class="fonte">Exame</p>
+                            <p class="texto descricao">
+                                Chuva causa enchentes em cidades do ABC, paralisa trens e provoca desli...
+                            </p>
+                            <a href="#" class="texto botao">Saiba mais</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./src/assets/imgs/card-enchente3.jpg" alt="Post Card3">
+                        <div class="conteudo">
+                            <h3>"Porto Alegre recebe...</h3>
+                            <p class="fonte">Jornal O Sul</p>
+                            <p class="texto descricao">
+                                Porto Alegre recebe R$ 171 milhões do Estado para proteção contra ench...
+                            </p>
+                            <a href="#" class="texto botao">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="recentes">
+                <div class="topo">
+                    <h2 class="subtitulo">Recentes</h2>
+                    <div class=" texto filtro">
+                        <a href="#">Canais</a>
+                        <a href="#" class="ativo">Postagens</a>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class="card">
+                        <img src="./src/assets/imgs/post-anistia.webp" alt="Post Anistia">
+                        <div class="conteudo">
+                            <h3>Anistia Internacional lan...</h3>
+                            <p class="fonte">Anistia Internacional</p>
+                            <p class="texto descricao">
+                                O documento traz dados inéditos sobre causas, consequências e responsa...
+                            </p>
+                            <a href="#" class="texto botao">Saiba mais</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./src/assets/imgs/post-jornal-noticias.webp" alt="Post Jornal Noticias">
+                        <div class="conteudo">
+                            <h3>Água começa a baixar n...</h3>
+                            <p class="fonte">Jornal de Notícias</p>
+                            <p class="texto descricao">
+                                As águas que alagam parte do Porto Alegre, capital regional do Rio Grande...
+                            </p>
+                            <a href="#" class="texto botao">Saiba mais</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./src/assets/imgs/post-uol.jpg" alt="Post Uol">
+                        <div class="conteudo">
+                            <h3>Enchentes catastróficas...</h3>
+                            <p class="fonte">UOL Notícias</p>
+                            <p class="texto descricao">
+                                As enchentes sem precedentes da semana passada na Nigéria deixaram...
+                            </p>
+                            <a href="#" class="texto botao">Saiba mais</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./src/assets/imgs/post-indepedente.jpeg" alt="Post Indepedente">
+                        <div class="conteudo">
+                            <h3>"Medo de novas enchent...</h3>
+                            <p class="fonte">Independente</p>
+                            <p class="texto descricao">
+                                Estrutura reformada após semanas do impacto de enchentes no estado...
+                            </p>
+                            <a href="#" class="texto botao">Saiba mais</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./src/assets/imgs/card-enchente1.1.jpg" alt="Post 1.1">
+                        <div class="conteudo">
+                            <h3>"Um ano após as ench...</h3>
+                            <p class="fonte">ABC Mais</p>
+                            <p class="texto descricao">
+                                Foi no começo de abril que o Instituto Nacional de Meteorologia In...
+                            </p>
+                            <a href="#" class="texto botao">Saiba mais</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./src/assets/imgs/card-enchente1.2.jpg" alt="Post 1.2">
+                        <div class="conteudo">
+                            <h3>"O que não fazer em...</h3>
+                            <p class="fonte">Agência SP</p>
+                            <p class="texto descricao">
+                                Com o período de chuvas, os cuidados necessários para evitar...
+                            </p>
+                            <a href="#" class="texto botao">Saiba mais</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./src/assets/imgs/card-enchente1.3.jpg" alt="Post 1.3">
+                        <div class="conteudo">
+                            <h3>"Enchentes, enxur...</h3>
+                            <p class="fonte">Senado Federal</p>
+                            <p class="texto descricao">
+                                O início dos ataques da Rússia à Ucrânia, no dia 24 de... 
+                            </p>
+                            <a href="#" class="texto botao">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section>
+                <h2 class></h2>
+            </section>
+
+
         </div>
-    </div>
-
-    <div class="cards">
-        <div class="card">
-            <img src="./src/assets/imgs/post-saude-rs.webp" alt="Cuidados após enchentes">
-            <div class="conteudo">
-                <h3>Cuidados após enchentes</h3>
-                <p class="fonte">Saúde RS</p>
-                <p class="texto descricao">
-                    A cartilha apresenta informações sobre doenças transmitidas pelo contat...
-                </p>
-                <a href="#" class="texto botao">Saiba mais</a>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="./src/assets/imgs/post-olhar-digital.png" alt="Post Olhar Digital">
-            <div class="conteudo">
-                <h3>Recorde de enchentes no...</h3>
-                <p class="fonte">Olhar Digital</p>
-                <p class="texto descricao">
-                    Levantamento do Serviço Geológico Brasil leva em conta dados sobre secas e enchen...
-                </p>
-                <a href="#" class="texto botao">Saiba mais</a>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="./src/assets/imgs/post-abridor-de-latas.png" alt="Post Abridor de Latas">
-            <div class="conteudo">
-                <h3>No mundo, mais de 20 m...</h3>
-                <p class="fonte">Abridor de Latas Comuni...</p>
-                <p class="texto descricao">
-                    Os desastres naturais são tema recorrente no Brasil, problemas como seca e exce...
-                </p>
-                <a href="#" class="texto botao">Saiba mais</a>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="./src/assets/imgs/download.jpg" alt="Post Universidade">
-            <div class="conteudo">
-                <h3>"Por que acontecem tant...</h3>
-                <p class="fonte">Universidade Federal do Pa...</p>
-                <p class="texto descricao">
-                    Confira perguntas da sociedade sobre prevenção, gestão de riscos, enchentes...
-                </p>
-                <a href="#" class="texto botao">Saiba mais</a>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="./src/assets/imgs/card-enchente1.jpg" alt="Post Card1">
-            <div class="conteudo">
-                <h3>"Enchentes no Rio Gra...</h3>
-                <p class="fonte">Jornal da USP</p>
-                <p class="texto descricao">
-                    Atraso nos métodos de drenagem agrava problemas ambientais e urbanos do P...
-                </p>
-                <a href="#" class="texto botao">Saiba mais</a>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="./src/assets/imgs/card-enchente2.jpg" alt="Post Card2">
-            <div class="conteudo">
-                <h3>"Notícias sobre enchen...</h3>
-                <p class="fonte">Exame</p>
-                <p class="texto descricao">
-                    Chuva causa enchentes em cidades do ABC, paralisa trens e provoca desli...
-                </p>
-                <a href="#" class="texto botao">Saiba mais</a>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="./src/assets/imgs/card-enchente3.jpg" alt="Post Card3">
-            <div class="conteudo">
-                <h3>"Porto Alegre recebe...</h3>
-                <p class="fonte">Jornal O Sul</p>
-                <p class="texto descricao">
-                    Porto Alegre recebe R$ 171 milhões do Estado para proteção contra ench...
-                </p>
-                <a href="#" class="texto botao">Saiba mais</a>
-            </div>
-        </div>
-
-        
-
-        
-
-    </div>
-</section>
-
-
-
-
-
-
-
-
-
-
-
-      </div>
     </main>
     <footer>
-      <div class="footer_container">
-        <div class="footer_content">
-          <div class="logotipo">
-            <img src="/src/assets/imgs/logo.png" alt="logo" />
-            <h2 class="">A Ultima Gota</h2>
-          </div>
-          <div class="footer_redes">
-            <a href="#"><i class="bi bi-facebook"></i></a>
-            <a href="#"><i class="bi bi-instagram"></i></a>
-            <a href="#"><i class="bi bi-linkedin"></i></a>
-          </div>
+        <div class="footer_container">
+            <div class="footer_content">
+                <div class="logotipo">
+                    <img src="/src/assets/imgs/logo.png" alt="logo" />
+                    <h2 class="">A Ultima Gota</h2>
+                </div>
+                <div class="footer_redes">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+            <p class="texto">
+                &copy; 2025 A Ultima Gota. Todos os direitos reservados.
+            </p>
         </div>
-        <p class="texto">
-          &copy; 2025 A Ultima Gota. Todos os direitos reservados.
-        </p>
-      </div>
     </footer>
     <script src="src/assets/js/index.js" type="module"></script>
     <script src="src/assets/js/home.js" type="module"></script>
-  </body>
+</body>
+
 </html>
