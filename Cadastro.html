@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro de Usuário</title>
+  <link rel="stylesheet" href="/src/assets/css/cadastro.css">
+</head>
+<body>
+  <div class="container">
+    <div class="form-caixa">
+      <h2>Crie sua conta</h2>
+      <p>Preencha seus dados</p>
+      <form id="cadastroForm">
+        <input type="text" id="cpf" placeholder="CPF/CNPJ" required>
+        <p id="errorCPF"></p>
+        <input type="text" id="nome" placeholder="Nome" required>
+        <input type="email" id="email" placeholder="E-Mail" required>
+        <input type="tel" id="telefone" placeholder="Telefone" required>
+        <input type="date" id="nascimento" placeholder="Data de Nascimento" required>
+        <p id="errorNascimento"></p>
+        <input type="password" id="senha" placeholder="Senha" required>
+        <button type="submit">CADASTRAR</button>
+      </form>
+      <img src="/src/assets/imgs/logo.png" alt="Ícone de gota" class="icone-gota" />
+    </div>
+  </div>
+  <div class="circulo-1"></div>
+</body>
+</html>
