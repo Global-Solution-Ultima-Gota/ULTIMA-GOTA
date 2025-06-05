@@ -1,0 +1,98 @@
+.main_container .main_content {
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+}
+.banner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 2rem auto 5rem auto;
+}
+
+.main_content {
+  width: 100%;
+  max-width: 100%;
+}
+
+.lp_secao {
+  padding: 3rem 0rem;
+  & .lp_secao_conteudo {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    color: var(--cor-texto);
+    .lp_secao_titulo {
+      margin-bottom: 1rem;
+    }
+    & .lp_secao_conteudo_texto {
+      width: 100%;
+      max-width: 500px;
+    }
+    & img {
+      width: 100%;
+      max-width: 600px;
+    }
+    & .button {
+      margin-top: 2rem;
+    }
+  }
+
+  &.alternative {
+    background: var(--cor-primaria);
+    & .button {
+      background: #fff;
+      color: var(--cor-primaria);
+    }
+    & .lp_secao_conteudo {
+      color: #fff;
+      flex-flow: row-reverse wrap;
+    }
+  }
+  & img {
+    border-radius: 1rem;
+    object-fit: cover;
+  }
+}
+
+.lp_secao_beneficios {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  max-width: 600px;
+}
+
+.lp_secao_beneficio {
+  width: 100%;
+  min-width: 100%;
+  min-height: 300px;
+  height: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1.2rem;
+  border: 1px solid var(--cor-primaria);
+  background: var(--cor-terciaria);
+  padding: 1.5rem;
+  border-radius: 20px;
+  & img {
+    width: 100%;
+    max-width: 180px !important;
+  }
+  & .beneficio_conteudo {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 0.5rem;
+    max-width: 300px;
+  }
+}
