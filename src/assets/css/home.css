@@ -199,23 +199,15 @@
   border-radius: 16px;
   transition: 0.3s;
   color: var(--cor-texto);
-  font-size: var(--fs-texto);
+  font-size: 20px;
   font-family: var(--ff-texto);
   cursor: pointer;
-}
-
-.botoes-topicos button span {
-  display: flex;
-  align-items: center;
+  width: 100%;
   justify-content: center;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  background-color: white;
-  color: #333333;
-  border: 1px solid black;
   font-weight: bold;
 }
+
+
 
 .botoes-topicos button:hover {
   background-color: var(--cor-primaria);
@@ -237,6 +229,8 @@
   max-width: 500px;
   align-items: center;
   min-height: 305px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .card-topicos .titulo {
@@ -323,4 +317,12 @@
   font-weight: bold;
   font-family: var(--ff-texto);
   font-size: var(--fs-texto);
+}
+
+.linha-cards {
+  display: flex;
+  gap: 30px; 
+  justify-content: center; 
+  flex-wrap: wrap; 
+  margin-top: 40px;
 }
