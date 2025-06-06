@@ -33,6 +33,7 @@ document
       telefone,
       nascimento: nascimento.toISOString().split("T")[0],
       senha,
+      avatar: "pet-01.png",
     };
     const usuarios = localStorage.getItem("usuarios");
     if (usuarios) {

@@ -39,8 +39,20 @@
   outline: none;
   transition: 0.3s background;
   text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   &:hover {
     background: var(--cor-secundaria);
+  }
+  &.danger {
+    background: #ff3f33;
+    &:hover {
+      background: #b94840;
+    }
+  }
+  & i {
+    font-size: 1.2rem;
   }
 }
 
@@ -157,7 +169,6 @@
 .banner {
   position: relative;
   background: linear-gradient(to right, #45a1e0, #45a1e033);
-  border-radius: 20px;
   padding: clamp(1.5rem, 8vw, 4rem);
   display: flex;
   flex-flow: column-reverse wrap;
@@ -265,6 +276,46 @@ footer {
   border: 1px solid var(--cor-secundaria);
 }
 
+.show {
+  display: flex !important;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.usuario-logado {
+  display: none;
+  align-items: center;
+  gap: 1rem;
+  color: var(--cor-texto);
+  & img {
+    width: 80px;
+    height: 80px;
+  }
+  & p {
+    font-weight: 500;
+  }
+  & .usuario-logado-menu {
+    display: none;
+    flex-flow: column nowrap;
+    width: 100%;
+    max-width: 200px;
+    gap: 0.5rem;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: var(--cor-fundo2);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    border-radius: 5px;
+    & .usuario-logado-menu-item {
+      width: 100%;
+      text-align: left;
+    }
+  }
+}
+
 /* Com a estrutura MOBILE FIRST, o breakpoint é 1200px (desktop) */
 @media (min-width: 1200px) {
   .header_container {
@@ -325,5 +376,6 @@ footer {
 @media (min-width: 1024px) {
   .banner {
     flex-flow: row wrap;
+    border-radius: 20px;
   }
 }
