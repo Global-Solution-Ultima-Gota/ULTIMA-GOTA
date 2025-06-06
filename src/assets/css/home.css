@@ -57,7 +57,7 @@
 }
 
 .card {
-    background-color: var(--cor-fundo);
+    background-color: var(--cor-fundo2);
     border: 1px solid  var(--cor-primaria);
     border-radius: 16px;
     width: 250px;
@@ -239,7 +239,7 @@
 .card-topicos {
     display: flex;
     gap: 20px;
-    background-color: var(--cor-fundo);
+    background-color: var(--cor-fundo2);
     border: 1px solid var(--cor-primaria);
     border-radius: 16px;
     padding: 20px;
@@ -317,7 +317,7 @@
 }
 
 .card-canal {
-    background-color: var(--cor-fundo);
+    background-color: var(--cor-fundo2);
     border: 1px solid var(--cor-primaria);
     border-radius: 16px;
     width: 250px;
