@@ -17,11 +17,11 @@
   --ff-link: "Montserrat", monospace, sans-serif;
 }
 
-.modo-color-1 {
-  --cor-fundo: #C4E1E6;
+.escuro {
+  --cor-fundo: #c4e1e6;
 }
-.modo-color-2 {
+.alternativo {
   --cor-fundo: #213555;
-  --cor-fundo2: #3E5879;
+  --cor-fundo2: #3e5879;
+  --cor-texto: #ffffff;
 }
-

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfil</title>
+    <link rel="stylesheet" href="/src/assets/css/index.css" />
+    <link rel="stylesheet" href="/src/assets/css/perfil.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <header class="header_container">
+      <div class="logotipo out">
+        <img src="/src/assets/imgs/logo.png" alt="logo" />
+        <h2>A Ultima Gota</h2>
+      </div>
+      <nav id="headerNav">
+        <div class="logotipo in">
+          <img src="/src/assets/imgs/logo.png" alt="logo" />
+          <h2>A Ultima Gota</h2>
+        </div>
+        <div class="header_menu_close" id="closeMenu">
+          <i class="bi bi-x-lg"></i>
+        </div>
+        <ul class="header_menu">
+          <li class="header_menu_item link">
+            <a href="../../index.html">Landing Page</a>
+          </li>
+          <li class="header_menu_item link"><a href="./home.html">Início</a></li>
+          <li class="header_menu_item link"><a href="./search.html">Explorar</a></li>
+          <li class="header_menu_item link"><a href="./quiz.html">Quiz</a></li>
+        </ul>
+        <div class="buttons">
+          <a href="/src/pages/login.html" class="button">Entrar</a>
+          <a href="/src/pages/cadastro.html" class="button">Cadastrar</a>
+        </div>
+        <div class="usuario-logado">
+          <p class="texto">
+            <span id="nomeUsuario"></span><i class="bi bi-caret-down-fill"></i>
+          </p>
+          <img
+            src="/src/assets/imgs/avatar/pet-01.png"
+            alt="perfil do usuário"
+            id="avatarUsuario"
+          />
+
+          <div class="usuario-logado-menu">
+            <a
+              href="/src/pages/perfil.html"
+              class="usuario-logado-menu-item button"
+              ><i class="bi bi-person-circle"></i> Perfil</a
+            >
+            <button class="button danger usuario-logado-menu-item" id="sair">
+              <i class="bi bi-box-arrow-left"></i> Sair
+            </button>
+          </div>
+        </div>
+        <div class="modos" id="modos">
+          <button
+            style="background: #ffffff"
+            class="active"
+            data-modo="padrao"
+          ></button>
+          <button style="background: #c4e1e6" data-modo="escuro"></button>
+          <button style="background: #213555" data-modo="alternativo"></button>
+        </div>
+      </nav>
+      <div class="header_menu_mobile" id="toggleMenu">
+        <i class="bi bi-list"></i>
+      </div>
+    </header>
+    <main class="main_container">
+      <section class="perfil_container">
+        <div class="perfil_boasvindas">Bem-vindo, Fulano!</div>
+        <div class="perfil_usuario">
+          <img
+            src="/src/assets/imgs/ratinho-removebg-preview.png"
+            alt="Avatar do usuário"
+          />
+          <div>
+            <strong>Fulano</strong><br />
+            <span>fulano@gmail.com</span>
+          </div>
+        </div>
+
+        <form class="perfil_form">
+          <input type="text" placeholder="Nome Completo" disabled />
+          <input type="text" placeholder="Nome de Usuário" disabled />
+          <input type="email" placeholder="Email" disabled />
+          <input type="text" placeholder="(011) 9 4002-8922" disabled />
+          <button type="button" id="editarPerfil">Editar</button>
+        </form>
+
+        <div class="avatar_section">
+          <h3>Avatar:</h3>
+          <div class="avatar_opcoes">
+            <div class="avatar">
+              <img
+                src="/src/assets/imgs/ratinho-removebg-preview.png"
+                alt="Junin"
+              />
+              <div>Avatar: Juninho, o rato tímido</div>
+            </div>
+            <div class="avatar locked">
+              <div class="locked-span">
+                <i class="bi bi-lock-fill"></i>
+                <span>Necessário 1000 pontos</span>
+              </div>
+              <img
+                src="/src/assets/imgs/topera-removebg-preview.png"
+                alt="Avatar 2"
+              />
+              <div>Avatar: Cleitinho, o rato Forte</div>
+            </div>
+            <div class="avatar locked">
+              <div class="locked-span">
+                <i class="bi bi-lock-fill"></i>
+                <span>Necessário 5000 pontos</span>
+              </div>
+              <img
+                src="/src/assets/imgs/hamister-removebg-preview.png"
+                alt="Avatar 3"
+              />
+              <div>Avatar: Marquinhos, o rato Rápido</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <button class="button button-up-page" id="buttonUpPage">
+        <i class="bi bi-arrow-up"></i>
+      </button>
+    </main>
+
+    <footer>
+      <div class="footer_container">
+        <div class="footer_content">
+          <div class="logotipo">
+            <img src="/src/assets/imgs/logo.png" alt="logo" />
+            <h2 class="">A Ultima Gota</h2>
+          </div>
+          <div class="footer_redes">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+        <p class="texto">
+          &copy; 2025 A Ultima Gota. Todos os direitos reservados.
+        </p>
+      </div>
+    </footer>
+    <script src="/src/assets/js/index.js" type="module"></script>
+    <script src="/src/assets/js/perfil.js" type="module"></script>
+  </body>
+</html>

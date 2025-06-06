@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A Última Gota - Login</title>
+  <link rel="stylesheet" href="/src/assets/css/Login.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="FamiliaAzul">
+      <img src="/src/assets/imgs/FamiliaAzul-removebg-preview.png" alt="Família Feliz" />
+    </div>
+
+    <div class="login-form">
+      <img src="/src/assets/imgs/logo.png" alt="Logo A Última Gota" class="logo" />
+      <h2>Bem-Vindo<br><span class="highlight">A Última Gota</span></h2>
+      
+      <form id="loginForm">
+        <label for="email">Email ou CPF</label>
+        <div class="input-box">
+          <input type="email" id="email" placeholder="exemplo@gmail.com" required />
+        </div>
+
+        <label for="senha">Senha</label>
+          <div class="input-box">
+            <input type="password" id="senha" placeholder="**********" required />
+            <span id="togglePassword" class="toggle-password">Mostrar</span>
+          </div>
+
+        <button type="submit">Entrar</button>
+      </form>
+
+      <p class="register">Não tem cadastro? <a href="Cadastro.html">Cadastrar</a></p>
+    </div>
+  </div>
+
+  <script src="/src/assets/js/Login.js"></script>
+</body>
+</html>

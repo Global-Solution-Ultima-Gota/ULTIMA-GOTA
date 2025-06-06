@@ -5,8 +5,307 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>A Ultima Gota</title>
     <link rel="stylesheet" href="src/assets/css/index.css" />
+    <link rel="stylesheet" href="src/assets/css/landing-page.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
   </head>
   <body>
+    <!-- HEADER -->
+    <header class="header_container">
+      <div class="logotipo out">
+        <img src="src/assets/imgs/logo.png" alt="logo do ultima gota" />
+        <h2>A Ultima Gota</h2>
+      </div>
+      <nav id="headerNav">
+        <div class="logotipo in">
+          <img src="src/assets/imgs/logo.png" alt="logo do ultima gota" />
+          <h2>A Ultima Gota</h2>
+        </div>
+        <div class="header_menu_close" id="closeMenu">
+          <i class="bi bi-x-lg"></i>
+        </div>
+        <ul class="header_menu">
+          <li class="header_menu_item link">
+            <a href="#problema">Problema</a>
+          </li>
+          <li class="header_menu_item link">
+            <a href="#tecnologias">Tecnologias</a>
+          </li>
+          <li class="header_menu_item link">
+            <a href="#objetivos">Objetivos</a>
+          </li>
+          <li class="header_menu_item link">
+            <a href="#publico-alvo">Público-alvo</a>
+          </li>
+          <li class="header_menu_item link">
+            <a href="#beneficios">Benefícios</a>
+          </li>
+          <li class="header_menu_item link">
+            <a href="#dia-a-dia">Dia a dia</a>
+          </li>
+        </ul>
+        <div class="buttons">
+          <a href="/src/pages/login.html" class="button">Entrar</a>
+        </div>
+        
+        <div class="usuario-logado">
+          <p class="texto"><span id="nomeUsuario"></span><i class="bi bi-caret-down-fill"></i></p>
+          <img src="src/assets/imgs/avatar/pet-01.png" alt="perfil do usuário" id="avatarUsuario"/>
 
+          <div class="usuario-logado-menu">
+            <a href="/src/pages/perfil.html" class="usuario-logado-menu-item button"><i class="bi bi-person-circle"></i> Perfil</a>
+            <button class="button danger usuario-logado-menu-item" id="sair"><i class="bi bi-box-arrow-left"></i> Sair</button>
+          </div>
+        </div>
+        <div class="modos" id="modos">
+          <button style="background: #FFFFFF;" class="active" data-modo="padrao"></button>
+          <button style="background: #C4E1E6;" data-modo="escuro"></button>
+          <button style="background: #213555;" data-modo="alternativo"></button>
+        </div>
+      </nav>
+      <div class="header_menu_mobile" id="toggleMenu">
+        <i class="bi bi-list"></i>
+      </div>
+    </header>
+    <!-- MAIN -->
+    <main class="main_container">
+      <div class="main_content">
+        <section class="banner">
+          <div class="slogan">
+            <h1 class="subtitulo slogan_titulo">Doe, Evolue e Impacte!</h1>
+            <p class="texto">
+              A Última Gota é uma plataforma única que une informação,
+              engajamento social e gamificação em uma só solução.
+            </p>
+            <a href="/src/pages/home.html" class="button" style="margin-top: 2rem">Saiba mais</a>
+          </div>
+          <img
+            class="banner_img"
+            src="src/assets/imgs/planeta-3d.png"
+            alt="planeta terra 3D"
+          />
+        </section>
+        <section class="lp_secao" id="problema">
+          <div class="lp_secao_conteudo">
+            <div class="lp_secao_conteudo_texto">
+              <h2 class="subtitulo lp_secao_titulo">Problema encontrado</h2>
+              <p class="texto">
+                Enchentes tiram casas, memórias e segurança. Milhares vivem o
+                medo, a dor e a incerteza, todos os anos.
+              </p>
+              <br />
+
+              <p class="texto">
+                Existimos para conectar solidariedade, apoio e informação.
+                Juntos, salvamos vidas, fortalecemos comunidades e espalhamos
+                esperança em meio ao caos.
+              </p>
+             <a href="/src/pages/home.html" class="button" style="margin-top: 2rem">Saiba mais</a>
+            </div>
+            <img
+                src="src/assets/imgs/secao-problema.png"
+              alt="Casas subermesas após enchentes"
+            />
+          </div>
+        </section>
+        <section class="lp_secao alternative" id="tecnologias">
+          <div class="lp_secao_conteudo">
+            <div class="lp_secao_conteudo_texto">
+              <h2 class="subtitulo lp_secao_titulo">
+                Tecnologia que conecta e salva vidas.
+              </h2>
+              <p class="texto">
+                Portal web, sistema de doações, gamificação e painel de impacto
+                tornam a ajuda e a informação fácil, rápida e acessível.
+              </p>
+              <br />
+              <p class="texto">
+                Tecnologias utilizadas no desevolvimento deste projeto foram:<br />
+                <strong>HTML, CSS e JavaScript.</strong>
+              </p>
+             <a href="/src/pages/home.html" class="button" style="margin-top: 2rem">Saiba mais</a>
+            </div>
+            <img
+              src="src/assets/imgs/secao-tecnologia.jpg"
+              alt="Mulher branca com blusa azul e cabelo preto digitando no computador com códigos flutuando"
+            />
+          </div>
+        </section>
+        <section class="lp_secao" id="objetivos">
+          <div class="lp_secao_conteudo">
+            <div class="lp_secao_conteudo_texto">
+              <h2 class="subtitulo lp_secao_titulo">
+                Nossos objetivos vão além de ajudar.
+              </h2>
+              <p class="texto">
+                Queremos transformar empatia em ação, conectando pessoas
+                dispotas a salvar vida, apoiar comunidades e gerar impacto
+                social.
+              </p>
+              <br />
+
+              <p class="texto">
+                Construímos uma rede solidária que informa, mobiliza, previne e
+                fortalece quem sofre com os impactos das enchentes.
+              </p>
+             <a href="/src/pages/home.html" class="button" style="margin-top: 2rem">Saiba mais</a>
+            </div>
+            <img
+              src="src/assets/imgs/secao-objetivos.png"
+              alt="Vitimas de uma enchente em uma rua com árvores caídas e água sobreposta"
+            />
+          </div>
+        </section>
+        <section class="lp_secao alternative" id="publico-alvo">
+          <div class="lp_secao_conteudo">
+            <div class="lp_secao_conteudo_texto">
+              <h2 class="subtitulo lp_secao_titulo">
+                Para quem é "A Última Gota" ?
+              </h2>
+              <p class="texto">
+                Pessoas solidárias, empáticas, que querem ajudar, apoiar causas
+                e proteger comunidades afetadas por enchentes e desastres.
+              </p>
+              <br />
+              <p class="texto">
+                ONGs, projetos e empresas que geram impacto, fortalecem redes de
+                apoio e investem em responsabilidade social e ambiental.
+              </p>
+             <a href="/src/pages/home.html" class="button" style="margin-top: 2rem">Saiba mais</a>
+            </div>
+            <img
+              src="src/assets/imgs/secao-publico.png"
+              alt="Mulher branca com blusa azul e cabelo preto digitando no computador com códigos flutuando"
+            />
+          </div>
+        </section>
+        <section class="lp_secao" id="beneficios">
+          <div class="lp_secao_conteudo" style="flex-flow: row wrap">
+            <div class="lp_secao_conteudo_texto">
+              <h2 class="subtitulo lp_secao_titulo">
+                Por que fazer parte da nossa plataforma ?
+              </h2>
+              <p class="texto">
+                Centralize informações seguras, conecte-se a uma rede de apoio e
+                acompanhe ações reais em áreas afetadas.
+              </p>
+              <br />
+              <p class="texto">
+                Doe, ganhe recompensas, apoie causas e faça parte de uma
+                transformação social contínua, mesmo após a crise.
+              </p>
+             <a href="/src/pages/home.html" class="button" style="margin-top: 2rem">Saiba mais</a>
+            </div>
+            <div class="lp_secao_beneficios carousel_container">
+              <div class="button left">
+                <i class="bi bi-chevron-left"></i>
+              </div>
+              <div class="button right">
+                <i class="bi bi-chevron-right"></i>
+              </div>
+              <div class="carousel">
+                <div class="lp_secao_beneficio carousel_item">
+                  <img
+                    src="src/assets/imgs/info-benefit.png"
+                    alt="Pessoa olhando para o computador com uma lupa"
+                  />
+                  <div class="beneficio_conteudo">
+                    <h3 class="subtitulo beneficio_titulo">
+                      Informações centralizadas
+                    </h3>
+                    <p class="texto">
+                      Todas as informações sobre as empresas, ONGS, instituições
+                      postadas por elas mesmas, tudo aqui!
+                    </p>
+                  </div>
+                </div>
+                <div class="lp_secao_beneficio carousel_item">
+                  <img
+                    src="src/assets/imgs/comunidade-benefit.png"
+                    alt="pessoas conversando em uma reunião"
+                  />
+                  <div class="beneficio_conteudo">
+                    <h3 class="subtitulo beneficio_titulo">Comunidade Ativa</h3>
+                    <p class="texto">
+                      Solidariedade, União e Empatia são os pilares para a
+                      reconstrução e para um futuro melhor. Você encontra tudo
+                      isso aqui, a partir dos canais de postagem
+                    </p>
+                  </div>
+                </div>
+                <div class="lp_secao_beneficio carousel_item">
+                  <img
+                    src="src/assets/imgs/pet-benefit.png"
+                    alt="Patinha de cachorro "
+                  />
+                  <div class="beneficio_conteudo">
+                    <h3 class="subtitulo beneficio_titulo">
+                      Gamificação com Pet Virtual
+                    </h3>
+                    <p class="texto">
+                      Faça o bem e seja recompensado! Doar, interagir, curtir...
+                      te recompensam com pontos e com eles você pode comprar
+                      nossos Pets Virtuais
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="lp_secao alternative" id="dia-a-dia">
+          <div class="lp_secao_conteudo">
+            <div class="lp_secao_conteudo_texto">
+              <h2 class="subtitulo lp_secao_titulo">
+                Como ajudamos no Dia a Dia ?
+              </h2>
+              <p class="texto">
+                <ul style="list-style: disc; padding-left: 2rem">
+                  <li class="texto">Centralizamos informações confiáveis e seguras.</li>
+                  <li class="texto">Facilitamos doações.</li>
+                  <li class="texto"F> Conectamos quem quer ajudar a quem mais precisa.</li>
+                </ul>
+              </p>
+              <br />
+              <p class="texto">
+                Vamos ajudar você a saber tudo sobre enchentes, saber como ajudar e como se proteger. <br> 
+                Desde a experiência por alguém que já passou, até o apoio oferecido. 
+              </p>
+             <a href="/src/pages/home.html" class="button" style="margin-top: 2rem">Saiba mais</a>
+            </div>
+            <img
+              src="src/assets/imgs/secao-dia-a-dia.jpg"
+              alt="Mulher branca com blusa azul e cabelo preto digitando no computador com códigos flutuando"
+            />
+          </div>
+        </section>
+      </div>
+      <button class=" button button-up-page" id="buttonUpPage">
+        <i class="bi bi-arrow-up"></i>
+      </button>
+    </main>
+    
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer_container">
+        <div class="footer_content">
+          <div class="logotipo">
+            <img src="src/assets/imgs/logo.png" alt="logo do ultima gota" />
+            <h2 class="">A Ultima Gota</h2>
+          </div>
+          <div class="footer_redes">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+        <p class="texto">
+          &copy; 2025 A Ultima Gota. Todos os direitos reservados.
+        </p>
+      </div>
+    </footer>
+    <script src="src/assets/js/index.js" type="module"></script>
   </body>
 </html>

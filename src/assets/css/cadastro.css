@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --cor-primaria: #4180ab;
+  --cor-fundo: #e4ebf0;
+  --cor-fundo2: #ffffff;
+  --cor-secundaria: #bdd1de;
+  --cor-terciaria: #d6f0e9;
+  --cor-texto: #333333;
+  --fs-titulo: 32px;
+  --ff-titulo: "Poppins", Verdana, sans-serif;
+  --fs-subtitulo: 28px;
+  --ff-subtitulo: "Montserrat", Verdana, sans-serif;
+  --fs-texto: 14px;
+  --ff-texto: "Poppins", Verdana, sans-serif;
+  --fs-link: 16px;
+  --ff-link: "Montserrat", monospace, sans-serif;
+}
+
+.modo-color-1 {
+  --cor-fundo: #C4E1E6;
+}
+.modo-color-2 {
+  --cor-fundo: #213555;
+  --cor-fundo2: #3E5879;
+}
+
+body {
+  background-color: var(--cor-secundaria);
+  font-family: var(--ff-texto);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120%;
+}
+
+.form-caixa {
+  background-color: var(--cor-fundo2);
+  padding: 0px 60px 0px 50px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+h2 {
+  font-size: var(--fs-titulo);
+  font-family: var(--ff-titulo);
+  color: var(--cor-texto);
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: var(--fs-texto);
+  font-family: var(--ff-texto);
+  color: var(--cor-texto);
+  margin-bottom: 20px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: var(--fs-texto);
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: var(--fs-link);
+  font-family: var(--ff-link);
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: black;
+}
+
+.icone-gota {
+  position: absolute;
+  top: 30px;
+  left: 60px;
+  width: 120px;
+}
+
+.circulo-1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  background-color: #2f6b94;
+  border-top-right-radius: 100%;
+}
+
+.register a {
+  color: var(--cor-primaria);
+  text-decoration: none;
+}
