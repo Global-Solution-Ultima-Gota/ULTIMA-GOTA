@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   editarBtn.addEventListener("click", () => {
     editando = !editando;
 
-    inputs.forEach(input => {
+    inputs.forEach((input) => {
       input.disabled = !editando;
     });
 
@@ -20,9 +20,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Seleção do Ratinho(Avatar)
   const avatares = document.querySelectorAll(".avatar");
-  avatares.forEach(avatar => {
+  avatares.forEach((avatar) => {
+    if (avatar.classList.contains("locked")) {
+      return;
+    }
     avatar.addEventListener("click", () => {
-      avatares.forEach(a => a.classList.remove("selecionado"));
+      avatares.forEach((a) => a.classList.remove("selecionado"));
       avatar.classList.add("selecionado");
     });
   });

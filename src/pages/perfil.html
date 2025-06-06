@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Perfil</title>
-  <link rel="stylesheet" href="/src/assets/css/index.css" />
-  <link rel="stylesheet" href="/src/assets/css/perfil.css" />
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
-
-
-</head>
-<body>
-  <header class="header_container">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfil</title>
+    <link rel="stylesheet" href="/src/assets/css/index.css" />
+    <link rel="stylesheet" href="/src/assets/css/perfil.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <header class="header_container">
       <div class="logotipo out">
         <img src="/src/assets/imgs/logo.png" alt="logo" />
         <h2>A Ultima Gota</h2>
@@ -40,49 +39,67 @@
       <div class="header_menu_mobile" id="toggleMenu">
         <i class="bi bi-list"></i>
       </div>
-  </header>
-<main class="main_container">
-  <section class="perfil_container">
-    <div class="perfil_boasvindas">Bem-vindo, Fulano!</div>
-    <div class="perfil_usuario">
-      <img src="/src/assets/imgs/ratinho-removebg-preview.png" alt="Avatar do usuário">
-      <div>
-        <strong>Fulano</strong><br>
-        <span>fulano@gmail.com</span>
-      </div>
-    </div>
-
-<form class="perfil_form">
-  <input type="text" placeholder="Nome Completo" disabled>
-  <input type="text" placeholder="Nome de Usuário" disabled>
-  <input type="email" placeholder="Email" disabled>
-  <input type="text" placeholder="(011) 9 4002-8922" disabled>
-  <button type="button" id="editarPerfil">Editar</button>
-</form>
-
-
-    <div class="avatar_section">
-      <h3>Avatar:</h3>
-      <div class="avatar_opcoes">
-        <div class="avatar">
-          <img src="/src/assets/imgs/ratinho-removebg-preview.png" alt="Junin">
-          <div>Avatar: Juninho, o rato tímido</div>
+    </header>
+    <main class="main_container">
+      <section class="perfil_container">
+        <div class="perfil_boasvindas">Bem-vindo, Fulano!</div>
+        <div class="perfil_usuario">
+          <img
+            src="/src/assets/imgs/ratinho-removebg-preview.png"
+            alt="Avatar do usuário"
+          />
+          <div>
+            <strong>Fulano</strong><br />
+            <span>fulano@gmail.com</span>
+          </div>
         </div>
-        <div class="avatar">
-          <img src="/src/assets/imgs/topera-removebg-preview.png" alt="Avatar 2">
-          <div>Avatar: Cleitinho, o rato Forte</div>
-        </div>
-        <div class="avatar">
-          <img src="/src/assets/imgs/hamister-removebg-preview.png" alt="Avatar 3">
-          <div>Avatar: Marquinhos, o rato Rápido</div>
-        </div>
-      </div>
-    </div>
-  </section>
-</main>
 
+        <form class="perfil_form">
+          <input type="text" placeholder="Nome Completo" disabled />
+          <input type="text" placeholder="Nome de Usuário" disabled />
+          <input type="email" placeholder="Email" disabled />
+          <input type="text" placeholder="(011) 9 4002-8922" disabled />
+          <button type="button" id="editarPerfil">Editar</button>
+        </form>
 
-  <footer>
+        <div class="avatar_section">
+          <h3>Avatar:</h3>
+          <div class="avatar_opcoes">
+            <div class="avatar">
+              <img
+                src="/src/assets/imgs/ratinho-removebg-preview.png"
+                alt="Junin"
+              />
+              <div>Avatar: Juninho, o rato tímido</div>
+            </div>
+            <div class="avatar locked">
+              <div class="locked-span">
+                <i class="bi bi-lock-fill"></i>
+                <span>Necessário 1000 pontos</span>
+              </div>
+              <img
+                src="/src/assets/imgs/topera-removebg-preview.png"
+                alt="Avatar 2"
+              />
+              <div>Avatar: Cleitinho, o rato Forte</div>
+            </div>
+            <div class="avatar locked">
+              <div class="locked-span">
+                <i class="bi bi-lock-fill"></i>
+                <span>Necessário 5000 pontos</span>
+              </div>  
+              <img
+                src="/src/assets/imgs/hamister-removebg-preview.png"
+                alt="Avatar 3"
+              />
+              <div>Avatar: Marquinhos, o rato Rápido</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
       <div class="footer_container">
         <div class="footer_content">
           <div class="logotipo">
@@ -99,9 +116,8 @@
           &copy; 2025 A Ultima Gota. Todos os direitos reservados.
         </p>
       </div>
-  </footer>
-  <script src="src/assets/js/index.js" type="module"></script>
-  <script src="/src/assets/js/perfil.js" type="module"></script>
-
-</body>
+    </footer>
+    <script src="src/assets/js/index.js" type="module"></script>
+    <script src="/src/assets/js/perfil.js" type="module"></script>
+  </body>
 </html>
