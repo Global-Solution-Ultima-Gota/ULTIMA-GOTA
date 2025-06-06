@@ -2,6 +2,7 @@
 import carousel from "./carousel.js";
 import menuMobile from "./menuMobile.js";
 import modos from "./modos.js";
+import scrollToTop from "./scrollToTop.js";
 const headerButtons = document.querySelector("#headerNav .buttons");
 const perfilContainer = document.querySelector("#headerNav .usuario-logado");
 const nomeUsuario = document.querySelector("#nomeUsuario");
@@ -22,12 +23,7 @@ modos();
 
 const buttonUpPage = document.getElementById("buttonUpPage");
 
-buttonUpPage.addEventListener("click", () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
-});
+buttonUpPage.addEventListener("click", scrollToTop);
 
 window.addEventListener("scroll", () => {
   if (window.scrollY > 500) {
