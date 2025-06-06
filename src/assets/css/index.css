@@ -30,6 +30,7 @@
 
 /* Botões */
 .button {
+  width: fit-content;
   padding: 1rem 1.4rem;
   color: #fff;
   border-radius: 5px;
@@ -38,10 +39,6 @@
   cursor: pointer;
   outline: none;
   transition: 0.3s background;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
   &:hover {
     background: var(--cor-secundaria);
   }
