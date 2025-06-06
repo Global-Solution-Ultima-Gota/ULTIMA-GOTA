@@ -1,6 +1,7 @@
 // importando o menu mobile de outro arquivo
 import carousel from "./carousel.js";
 import menuMobile from "./menuMobile.js";
+import modos from "./modos.js";
 const headerButtons = document.querySelector("#headerNav .buttons");
 const perfilContainer = document.querySelector("#headerNav .usuario-logado");
 const nomeUsuario = document.querySelector("#nomeUsuario");
@@ -8,15 +9,16 @@ const avatarUsuario = document.querySelector("#headerNav #avatarUsuario");
 const usuarioLogadoMenu = document.querySelector(
   "#headerNav .usuario-logado-menu"
 );
-const sair = document.querySelector(
-  "#sair"
-);
+const sair = document.querySelector("#sair");
 
 // chamando a função do menu mobile
 menuMobile();
 
 // Chamando o carousel
 carousel();
+
+// Modos
+modos();
 
 const buttonUpPage = document.getElementById("buttonUpPage");
 

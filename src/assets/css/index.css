@@ -1,6 +1,11 @@
 @import url("./variaveis.css");
 @import url("./reset.css");
 
+body {
+  transition: 0.3s all;
+  background-color: var(--cor-fundo) ;
+}
+
 /* Textos */
 .titulo {
   font-size: var(--fs-titulo);
@@ -68,7 +73,6 @@
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     display: flex;
     flex-flow: column nowrap;
-    background-color: var(--cor-fundo2);
     position: fixed;
     top: 0;
     left: -100%;
@@ -128,6 +132,24 @@
       color: var(--cor-secundaria);
     }
   }
+  & .modos {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 0.5rem;
+    & button {
+      border: 1px solid #000000;
+      background: none;
+      cursor: pointer;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      opacity: 0.5;
+      transition: 0.3s opacity;
+      &.active {
+        opacity: 1;
+      }
+    }
+  }
 }
 
 .logotipo {
@@ -154,7 +176,6 @@
 .main_container {
   position: relative;
   width: 100%;
-  background-color: var(--cor-fundo2);
   & .main_content {
     padding: 1rem;
     width: 100%;
@@ -282,6 +303,7 @@ footer {
 }
 
 .usuario-logado {
+  position: relative;
   display: none;
   align-items: center;
   gap: 1rem;
@@ -300,12 +322,13 @@ footer {
     max-width: 200px;
     gap: 0.5rem;
     position: absolute;
-    top: 100%;
-    right: 0;
+    top: -200%;
+    left: 0;
     background-color: var(--cor-fundo2);
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     padding: 1rem;
     border-radius: 5px;
+    z-index: 1001;
     & .usuario-logado-menu-item {
       width: 100%;
       text-align: left;
@@ -344,6 +367,9 @@ footer {
           }
         }
       }
+      & .modos {
+        flex-flow: column nowrap;
+      }
     }
     & .buttons {
       margin-top: 0;
@@ -366,6 +392,12 @@ footer {
     }
     &.in {
       display: flex;
+    }
+  }
+  .usuario-logado {
+    & .usuario-logado-menu {
+      top: 100%;
+      left: 0;
     }
   }
 }

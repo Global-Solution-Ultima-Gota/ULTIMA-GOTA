@@ -48,8 +48,8 @@
         </ul>
         <div class="buttons">
           <a href="/src/pages/login.html" class="button">Entrar</a>
-          <a href="/src/pages/cadastro.html" class="button">Cadastrar</a>
         </div>
+        
         <div class="usuario-logado">
           <p class="texto"><span id="nomeUsuario"></span><i class="bi bi-caret-down-fill"></i></p>
           <img src="src/assets/imgs/avatar/pet-01.png" alt="perfil do usuário" id="avatarUsuario"/>
@@ -58,6 +58,11 @@
             <a href="/src/pages/perfil.html" class="usuario-logado-menu-item button"><i class="bi bi-person-circle"></i> Perfil</a>
             <button class="button danger usuario-logado-menu-item" id="sair"><i class="bi bi-box-arrow-left"></i> Sair</button>
           </div>
+        </div>
+        <div class="modos" id="modos">
+          <button style="background: #FFFFFF;" class="active" data-modo="padrao"></button>
+          <button style="background: #C4E1E6;" data-modo="alternativo"></button>
+          <button style="background: #213555;" data-modo="escuro"></button>
         </div>
       </nav>
       <div class="header_menu_mobile" id="toggleMenu">
