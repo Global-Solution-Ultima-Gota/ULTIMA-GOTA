@@ -1,6 +1,11 @@
 @import url("./variaveis.css");
 @import url("./reset.css");
 
+body {
+  transition: 0.3s all;
+  background-color: var(--cor-fundo) ;
+}
+
 /* Textos */
 .titulo {
   font-size: var(--fs-titulo);
@@ -30,6 +35,7 @@
 
 /* Botões */
 .button {
+  width: fit-content;
   padding: 1rem 1.4rem;
   color: #fff;
   border-radius: 5px;
@@ -38,9 +44,17 @@
   cursor: pointer;
   outline: none;
   transition: 0.3s background;
-  text-align: center;
   &:hover {
     background: var(--cor-secundaria);
+  }
+  &.danger {
+    background: #ff3f33;
+    &:hover {
+      background: #b94840;
+    }
+  }
+  & i {
+    font-size: 1.2rem;
   }
 }
 
@@ -59,7 +73,6 @@
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     display: flex;
     flex-flow: column nowrap;
-    background-color: var(--cor-fundo2);
     position: fixed;
     top: 0;
     left: -100%;
@@ -119,6 +132,24 @@
       color: var(--cor-secundaria);
     }
   }
+  & .modos {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 0.5rem;
+    & button {
+      border: 1px solid #000000;
+      background: none;
+      cursor: pointer;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      opacity: 0.5;
+      transition: 0.3s opacity;
+      &.active {
+        opacity: 1;
+      }
+    }
+  }
 }
 
 .logotipo {
@@ -145,7 +176,6 @@
 .main_container {
   position: relative;
   width: 100%;
-  background-color: var(--cor-fundo2);
   & .main_content {
     padding: 1rem;
     width: 100%;
@@ -157,7 +187,6 @@
 .banner {
   position: relative;
   background: linear-gradient(to right, #45a1e0, #45a1e033);
-  border-radius: 20px;
   padding: clamp(1.5rem, 8vw, 4rem);
   display: flex;
   flex-flow: column-reverse wrap;
@@ -265,6 +294,48 @@ footer {
   border: 1px solid var(--cor-secundaria);
 }
 
+.show {
+  display: flex !important;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.usuario-logado {
+  position: relative;
+  display: none;
+  align-items: center;
+  gap: 1rem;
+  color: var(--cor-texto);
+  & img {
+    width: 80px;
+    height: 80px;
+  }
+  & p {
+    font-weight: 500;
+  }
+  & .usuario-logado-menu {
+    display: none;
+    flex-flow: column nowrap;
+    width: 100%;
+    max-width: 200px;
+    gap: 0.5rem;
+    position: absolute;
+    top: -200%;
+    left: 0;
+    background-color: var(--cor-fundo2);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    border-radius: 5px;
+    z-index: 1001;
+    & .usuario-logado-menu-item {
+      width: 100%;
+      text-align: left;
+    }
+  }
+}
+
 /* Com a estrutura MOBILE FIRST, o breakpoint é 1200px (desktop) */
 @media (min-width: 1200px) {
   .header_container {
@@ -296,6 +367,9 @@ footer {
           }
         }
       }
+      & .modos {
+        flex-flow: column nowrap;
+      }
     }
     & .buttons {
       margin-top: 0;
@@ -320,10 +394,17 @@ footer {
       display: flex;
     }
   }
+  .usuario-logado {
+    & .usuario-logado-menu {
+      top: 100%;
+      left: 0;
+    }
+  }
 }
 
 @media (min-width: 1024px) {
   .banner {
     flex-flow: row wrap;
+    border-radius: 20px;
   }
 }

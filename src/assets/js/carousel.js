@@ -1,6 +1,6 @@
 export default function carousel() {
   const carousel_container = document.querySelectorAll(".carousel_container");
-  carousel_container.forEach((container) => {
+  carousel_container?.forEach((container) => {
     const carousel = container.querySelector(".carousel");
     const carousel_items = carousel.querySelectorAll(".carousel_item");
     const prev = container.querySelector(".button.left");
