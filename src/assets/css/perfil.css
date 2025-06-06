@@ -17,12 +17,6 @@
   --ff-link: "Montserrat", monospace, sans-serif;
 }
 
-body {
-  margin: 0;
-  font-family: var(--ff-texto);
-  background-color: var(--cor-fundo);
-}
-
 .container {
   display: flex;
   min-height: 100vh;

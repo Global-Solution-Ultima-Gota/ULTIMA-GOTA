@@ -26,14 +26,46 @@
           <i class="bi bi-x-lg"></i>
         </div>
         <ul class="header_menu">
-          <li class="header_menu_item link"><a href="#">Landing Page</a></li>
-          <li class="header_menu_item link"><a href="#">Início</a></li>
-          <li class="header_menu_item link"><a href="#">Explorar</a></li>
-          <li class="header_menu_item link"><a href="#">Quiz</a></li>
+          <li class="header_menu_item link">
+            <a href="../../index.html">Landing Page</a>
+          </li>
+          <li class="header_menu_item link"><a href="./home.html">Início</a></li>
+          <li class="header_menu_item link"><a href="./search.html">Explorar</a></li>
+          <li class="header_menu_item link"><a href="./quiz.html">Quiz</a></li>
         </ul>
         <div class="buttons">
-          <button class="button">Entrar</button>
-          <button class="button">Cadastrar</button>
+          <a href="/src/pages/login.html" class="button">Entrar</a>
+          <a href="/src/pages/cadastro.html" class="button">Cadastrar</a>
+        </div>
+        <div class="usuario-logado">
+          <p class="texto">
+            <span id="nomeUsuario"></span><i class="bi bi-caret-down-fill"></i>
+          </p>
+          <img
+            src="/src/assets/imgs/avatar/pet-01.png"
+            alt="perfil do usuário"
+            id="avatarUsuario"
+          />
+
+          <div class="usuario-logado-menu">
+            <a
+              href="/src/pages/perfil.html"
+              class="usuario-logado-menu-item button"
+              ><i class="bi bi-person-circle"></i> Perfil</a
+            >
+            <button class="button danger usuario-logado-menu-item" id="sair">
+              <i class="bi bi-box-arrow-left"></i> Sair
+            </button>
+          </div>
+        </div>
+        <div class="modos" id="modos">
+          <button
+            style="background: #ffffff"
+            class="active"
+            data-modo="padrao"
+          ></button>
+          <button style="background: #c4e1e6" data-modo="escuro"></button>
+          <button style="background: #213555" data-modo="alternativo"></button>
         </div>
       </nav>
       <div class="header_menu_mobile" id="toggleMenu">
@@ -87,7 +119,7 @@
               <div class="locked-span">
                 <i class="bi bi-lock-fill"></i>
                 <span>Necessário 5000 pontos</span>
-              </div>  
+              </div>
               <img
                 src="/src/assets/imgs/hamister-removebg-preview.png"
                 alt="Avatar 3"
@@ -97,6 +129,9 @@
           </div>
         </div>
       </section>
+      <button class="button button-up-page" id="buttonUpPage">
+        <i class="bi bi-arrow-up"></i>
+      </button>
     </main>
 
     <footer>
@@ -117,7 +152,7 @@
         </p>
       </div>
     </footer>
-    <script src="src/assets/js/index.js" type="module"></script>
+    <script src="/src/assets/js/index.js" type="module"></script>
     <script src="/src/assets/js/perfil.js" type="module"></script>
   </body>
 </html>

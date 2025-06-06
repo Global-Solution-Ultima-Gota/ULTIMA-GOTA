@@ -39,7 +39,7 @@ if (localStorage.getItem("usuarioLogado")) {
   const usuarioLogado = JSON.parse(localStorage.getItem("usuarioLogado"));
 
   nomeUsuario.textContent = usuarioLogado.nome;
-  avatarUsuario.src = `src/assets/imgs/avatar/${usuarioLogado.avatar}`;
+  avatarUsuario.src = `/src/assets/imgs/avatar/${usuarioLogado.avatar}`;
 } else {
   headerButtons.classList.remove("hidden");
   perfilContainer.classList.remove("show");

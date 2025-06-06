@@ -2,7 +2,8 @@
 
 .card-horizontal {
   display: flex;
-  background-color: white;
+  background-color: var(--cor-fundo2);
+
   border-radius: 20px;
   overflow: hidden;
   margin: 20px 0;
@@ -85,7 +86,8 @@
 
 
 .card-conteudo-noticia {
-  background-color: white;
+  background-color: var(--cor-fundo2);
+
   border-radius: 20px;
   padding: 24px;
   margin: 20px 0;

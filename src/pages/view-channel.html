@@ -16,32 +16,64 @@
 <body>
     <header class="header_container">
         <div class="logotipo out">
-            <img src="/src/assets/imgs/logo.png" alt="logo" />
-            <h2>A Ultima Gota</h2>
+          <img src="/src/assets/imgs/logo.png" alt="logo" />
+          <h2>A Ultima Gota</h2>
         </div>
         <nav id="headerNav">
-            <div class="logotipo in">
-                <img src="/src/assets/imgs/logo.png" alt="logo" />
-                <h2>A Ultima Gota</h2>
+          <div class="logotipo in">
+            <img src="/src/assets/imgs/logo.png" alt="logo" />
+            <h2>A Ultima Gota</h2>
+          </div>
+          <div class="header_menu_close" id="closeMenu">
+            <i class="bi bi-x-lg"></i>
+          </div>
+          <ul class="header_menu">
+            <li class="header_menu_item link">
+              <a href="../../index.html">Landing Page</a>
+            </li>
+            <li class="header_menu_item link"><a href="./home.html">Início</a></li>
+            <li class="header_menu_item link"><a href="./search.html">Explorar</a></li>
+            <li class="header_menu_item link"><a href="./quiz.html">Quiz</a></li>
+          </ul>
+          <div class="buttons">
+            <a href="/src/pages/login.html" class="button">Entrar</a>
+            <a href="/src/pages/cadastro.html" class="button">Cadastrar</a>
+          </div>
+          <div class="usuario-logado">
+            <p class="texto">
+              <span id="nomeUsuario"></span><i class="bi bi-caret-down-fill"></i>
+            </p>
+            <img
+              src="/src/assets/imgs/avatar/pet-01.png"
+              alt="perfil do usuário"
+              id="avatarUsuario"
+            />
+  
+            <div class="usuario-logado-menu">
+              <a
+                href="/src/pages/perfil.html"
+                class="usuario-logado-menu-item button"
+                ><i class="bi bi-person-circle"></i> Perfil</a
+              >
+              <button class="button danger usuario-logado-menu-item" id="sair">
+                <i class="bi bi-box-arrow-left"></i> Sair
+              </button>
             </div>
-            <div class="header_menu_close" id="closeMenu">
-                <i class="bi bi-x-lg"></i>
-            </div>
-            <ul class="header_menu">
-                <li class="header_menu_item link"><a href="#">Landing Page</a></li>
-                <li class="header_menu_item link"><a href="#">Início</a></li>
-                <li class="header_menu_item link"><a href="#">Explorar</a></li>
-                <li class="header_menu_item link"><a href="#">Quiz</a></li>
-            </ul>
-            <div class="buttons">
-                <button class="button">Entrar</button>
-                <button class="button">Cadastrar</button>
-            </div>
+          </div>
+          <div class="modos" id="modos">
+            <button
+              style="background: #ffffff"
+              class="active"
+              data-modo="padrao"
+            ></button>
+            <button style="background: #c4e1e6" data-modo="escuro"></button>
+            <button style="background: #213555" data-modo="alternativo"></button>
+          </div>
         </nav>
         <div class="header_menu_mobile" id="toggleMenu">
-            <i class="bi bi-list"></i>
+          <i class="bi bi-list"></i>
         </div>
-    </header>
+      </header>
 
     <section class="barra-pesquisa">
         <div class="container-pesquisa">

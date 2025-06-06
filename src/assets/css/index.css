@@ -67,6 +67,7 @@ body {
   position: relative;
   padding: 0.7rem 1rem;
   & nav {
+    background: var(--cor-fundo2);
     width: 100%;
     max-width: 498px;
     height: 100vh;
@@ -341,6 +342,7 @@ footer {
   .header_container {
     justify-content: center;
     & nav {
+      background: var(--cor-fundo);
       position: relative;
       left: 0;
       max-width: 1200px;
