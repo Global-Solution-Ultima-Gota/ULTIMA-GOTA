@@ -49,7 +49,8 @@ document
     );
     // Após o cadastro, redirecionamos para a página de login.
     setTimeout(() => {
-      window.location.href = "/src/pages/login.html";
+      window.location.href = "/src/pages/login.html
+";
     }, 1000);
   });
 
