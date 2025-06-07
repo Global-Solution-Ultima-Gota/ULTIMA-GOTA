@@ -23,6 +23,12 @@ document
     const senha = document.getElementById("senha").value;
 
     const usuarios = JSON.parse(localStorage.getItem("usuarios"));
+
+    if (usuarios.length === 0) {
+      alert("Não há usuários cadastrados");
+      return;
+    }
+
     const usuarioExiste = usuarios.find((usuario) => usuario.email === email);
 
     if (!usuarioExiste) {
